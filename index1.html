@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>四级联动</title>
+		<link rel="stylesheet" type="text/css" href="css/index1.css" />
+
+	</head>
+
+	<body>
+		<div class="ds_area">
+			<div class="ui-area-text-wrap"><span>请选择地区</span><i></i>
+			</div>
+			<div class="ui-arear-content-wrap">
+				<!--tab页签-->
+				<div class="ui-area-tab">
+					<a class="ui-switchable-item ui-area-current" href="javascript:;"><em>请选择</em><i></i></a>
+					<a class="ui-switchable-item" href="javascript:;"><em>请选择</em><i></i></a>
+					<a class="ui-switchable-item" href="javascript:;"><em>请选择</em><i></i></a>
+					<a class="ui-switchable-item" href="javascript:;"><em>请选择</em><i></i></a>
+				</div>
+				<div class="ui-area-content">
+					<!--省-->
+					<div class="ui-switchable-panel ui-switchable-panel-selected">
+						<ul id="ds_prov" class="ui-area-content-list"></ul>
+					</div>
+					<!--市-->
+					<div class="ui-switchable-panel">
+						<ul id="ds_city" class="ui-area-content-list"></ul>
+					</div>
+					<!--区-->
+					<div class="ui-switchable-panel">
+						<ul id="ds_area" class="ui-area-content-list"></ul>
+					</div>
+					<!--街道-->
+					<div class="ui-switchable-panel">
+						<ul id="ds_town" name="town" class="ui-area-content-list"></ul>
+					</div>
+				</div>
+				<!--关闭按钮-->
+				<div class="ui-area-close"></div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/city.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index1.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>
